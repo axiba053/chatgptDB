@@ -1,0 +1,93 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    '1104374967':
+      email: benniaowl@qq.com
+      name: "\u7B28\u9E1F\u4E91"
+      password: $2b$12$Idy/W2yKjEUAwbb8SmZukeOz7IKSl.IwWjYTqp78kEVYB9AoTyeVC
+    '1111':
+      email: 2514625262@qq.com
+      name: '1111'
+      password: $2b$12$4rmdGMzUXiZc/0BLh73JEeTIpnd6OSdhk2t9mMGksWEnHqePtBTUa
+    '2823264360':
+      email: 2823264360@qq.com
+      name: '2823264360'
+      password: $2b$12$Sgh7OwX3ygaI.Z6Q5zH0NuqQn4f7PWRO9JzbtDkyy8NjNSNRzFjhq
+    '666666':
+      email: 354933052@qq.com
+      name: '666666'
+      password: $2b$12$PBO85Wwia2nPLtQK8KGz5OsMhxtk.J1MD8KhVedunwovcT5DX/un2
+    aa:
+      email: 1944614100@qq.com
+      name: aa
+      password: $2b$12$WghIHPrP.8XamPmazaVdpuq7NDD8mQ8TMcw6wfrSVvOYv7qXyukLy
+    antas:
+      email: 907333918@qq.com
+      name: antas
+      password: $2b$12$raYTRw/S0qH6lPj4A34icOOFMP5J1BNg5LgR/SEOliqcPf98GKbnO
+    bilibili:
+      email: bilibili@153.com
+      name: '2233'
+      password: $2b$12$bsIt54qjVOpyWOfXQ4TlduQgbhlI69JVQ0pxwrbMD7KX63ZtcvdWm
+    dawu:
+      email: 1375490651@qq.com
+      name: dawu
+      password: $2b$12$v065mByCHvsNbulu1iR/te4iHljssDYY4kyewmDQGJbVXavPUPPDG
+    maoni:
+      email: 2695662455@qq.com
+      name: maoni
+      password: $2b$12$uidYj/jKhuyC.CFw/oNuFeCl3v/UOr.NIfcVfhVjifeAsdSewy96.
+    minecraft_31:
+      email: 860045957@qq.com
+      name: minecraft_31
+      password: $2b$12$PHwL.v1KkNpHSs.AGNg1qOJ9atIqWBT1lJws2ApLPPL/3Vccxo9qy
+    nccn:
+      email: nccn@126.com
+      name: NCCN
+      password: $2b$12$mamAtpKJKlf1HXNHnQmLBO0JIraiJHfEgaHELAmj4aW/xNdIlD0Ea
+    pyluv:
+      email: pyluv@foxmail.com
+      name: pyluv
+      password: $2b$12$wy2O2FrzgiuDg1V1Ej0d1edcRxx9WIcMkhur4uJHwyplJmDTDfeDu
+    test:
+      email: test@126.com
+      name: wode
+      password: $2b$12$aTT758Y.AsNBUcs7Rsfhqul6oBIOGJAhrrKBGBDLLUqWggkWQ5CSW
+    tmp:
+      email: 654464405@qq.com
+      name: "\u6211\u7684"
+      password: $2b$12$DpupiTwrEDrUESU5JKyWHuaE0wQdjb.6cOn.UmUvmET2uoRm98jue
+    wujiaosheji:
+      email: 1640234984@qq.com
+      name: wujiaosheji
+      password: $2b$12$Kk0eS8A0EdWxL9Zat8zB0.MNY68z3Zztr1tmJlf6fhuNt0pfN6Oyi
+    wujiaosj:
+      email: 1640234984@qq.com
+      name: wujiaosj
+      password: $2b$12$AsC5zrSO32LAEp0e8wHK2uEQLo/qhD.xMV8OkDid12OoWHx.KMAL2
+    wuyang:
+      email: 986246674@qq.com
+      name: "\u4E94\u9633"
+      password: $2b$12$Hz7n/0k8si7zFZV6sGB9POIrlYFFdWfvsuAGSZVn0884VDLYoibsa
+    xiaolu:
+      email: 2823264360@qq.com
+      name: xiaoluboox
+      password: $2b$12$0TXtGLFgYZo.Co0hCQayWOUFGTIf8ElEJ1OC1BKD2EI.2VVVYTL2q
+    zcb:
+      email: zcb@123.com
+      name: zcb
+      password: $2b$12$EoafTdsaRvDWkZ0zBr8s2eDi99/0jPtOS6ZCSI9KKG.o6iQg8fGTK
+    zcb2:
+      email: zcb2@123.com
+      name: zcb2
+      password: $2b$12$bbohBrtEwjrkbSgYK6AQEeVnGTyI0Y/mHLOWNjU1c7DPeXSAl0wAK
+    zhy:
+      email: 594143296@qq.com
+      name: zhy
+      password: $2b$12$MQQRV3KXZq//CCQJJN1lL.qEiXozicg2/f8gPDd5Ztpn30jjhyfHu
+preauthorized:
+  emails:
+  - melsby@gmail.com
