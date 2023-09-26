@@ -59,7 +59,8 @@ def get_chain(API,username):
     chain = RetrievalQA.from_chain_type(
         llm=OpenAI(temperature=0,openai_api_key=API),
         chain_type="stuff",
-        retriever=vector_store.as_retriever(search_kwargs={"k": 3})
+        retriever=vector_store.as_retriever(search_kwargs={"k": 1}),
+        return_source_documents=True
     )
     return chain
 
