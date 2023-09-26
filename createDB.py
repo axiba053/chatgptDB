@@ -27,7 +27,11 @@ class CreateDB:
         documents = loader.load()
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=self.chunk_size, chunk_overlap=self.chunk_overlap)
         docs=text_splitter.split_documents(documents)
-        st.warning(f'文件中共有{len(documents[0].page_content)}个字符,拆分为{len(docs)}个子数据')
+        str_num=len(documents[0].page_content)
+        st.warning(f'文件中共有{str_num}个字符,拆分为{len(docs)}个子数据')
+        cost= (str_num * 0.001)/0.85 * 0.0001 # 字数/0.85 Ktoken * 0.0001$/Ktoken
+        cost2 = "< $0.01" if cost < 0.01 else ("$%.2f" % cost)
+        st.success(f'消耗金额:  {cost2}')
         return docs
 
     def store_qdrand(self):
