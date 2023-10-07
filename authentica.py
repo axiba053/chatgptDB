@@ -67,14 +67,14 @@ class UserInfos:
 
     def forget_password(self):
         try:
-            username_of_forgotten_password, email_of_forgotten_password, new_random_password = self.authenticator.forgot_password('Forgot password')
+            username_of_forgotten_password, email_of_forgotten_password, new_random_password = self.authenticator.forgot_password('重置密码界面')
             print(username_of_forgotten_password, email_of_forgotten_password, new_random_password)
             if username_of_forgotten_password:
-                st.success('New password to be sent securely')
+                st.success('密码已重置为「123456」，请及时修改密码！')
                 self.updata_config()
                 # Random password should be transferred to user securely
             else:
-                st.error('Username not found')
+                st.warning('请输入用户名及注册邮箱')
         except Exception as e:
             st.error(e)
 

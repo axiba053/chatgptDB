@@ -384,7 +384,8 @@ class Authenticate:
         str
             New plain text password that should be transferred to user securely.
         """
-        self.random_password = generate_random_pw()
+        # self.random_password = generate_random_pw() #生成随机密码
+        self.random_password = '123456' #重置密码为123456
         self.credentials['usernames'][username]['password'] = Hasher([self.random_password]).generate()[0]
         return self.random_password
 
@@ -415,16 +416,17 @@ class Authenticate:
             forgot_password_form = st.sidebar.form('Forgot password')
 
         forgot_password_form.subheader(form_name)
-        username = forgot_password_form.text_input('Username').lower()
+        username = forgot_password_form.text_input('用户名').lower()
+        email = forgot_password_form.text_input('邮箱')
 
-        if forgot_password_form.form_submit_button('Submit'):
+        if forgot_password_form.form_submit_button('提交'):
             if len(username) > 0:
-                if username in self.credentials['usernames']:
+                if username in self.credentials['usernames'] and self.credentials['usernames'][username]['email']==email:
                     return username, self.credentials['usernames'][username]['email'], self._set_random_password(username)
                 else:
                     return False, None, None
             else:
-                raise ForgotError('Username not provided')
+                raise ForgotError('用户名不存在！')
         return None, None, None
 
     def _get_username(self, key: str, value: str) -> str:
