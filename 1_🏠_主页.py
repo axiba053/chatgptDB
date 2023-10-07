@@ -17,7 +17,7 @@ def main():
     Ui().side_bar()
     # interface_form=st.form('Interface')
     st.subheader('界面')
-    menu = ["首页","注册","登录","修改密码"]
+    menu = ["首页","注册","登录","修改密码","重置密码"]
     choice = st.selectbox("",menu)
     if choice =="首页":
         Ui().my_info()
@@ -30,7 +30,7 @@ def main():
         if username:
             st.markdown('---')
             Ui().main_interface(username)
-    elif choice=="忘记密码":
+    elif choice=="重置密码":
         UserInfos().forget_password()
     elif choice=="修改密码":
         username=st.session_state['username']
