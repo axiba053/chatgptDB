@@ -39,7 +39,7 @@ v1_1="""
 
 v1_2="""
 ## V1.2 (2023.10.08):
-* 从IP改用域名访问：https://chatgptdb.streamlit.app/
+* 从IP访问改为域名访问：https://chatgptdb.streamlit.app/
 * 增加文本资料嵌入数据库时显示预计消费
 * 增加提问时显示消耗token及消费金额
 * 增加显示答案来源
