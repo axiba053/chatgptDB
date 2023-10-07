@@ -38,12 +38,14 @@ v1_1="""
 """
 
 v1_2="""
-## V1.2 (2023.09.26):
+## V1.2 (2023.10.08):
+* 从IP改用域名访问：https://chatgptdb.streamlit.app/
 * 增加文本资料嵌入数据库时显示预计消费
 * 增加提问时显示消耗token及消费金额
 * 增加显示答案来源
-* 增加多页面显示图标
-* Bilibili客服计划数据库新增bilibili帮助页面内容
+* 增加【重置密码】功能
+* Bilibili客服页面升级
+* Bilibili客服数据库新增[bilibili帮助页面内容](https://www.bilibili.com/blackboard/help.html)
 ---
 """
 
