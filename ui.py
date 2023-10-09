@@ -114,7 +114,8 @@ class Ui:
                     source=result["source_documents"][0].page_content
                     # answer = chain.run(question)
                     st.write(f'答：{answer}')
-                    st.warning(f'来源：{source}')
+                    with st.expander("来源"):
+                        st.markdown(source)
                     total_cost='%.2f' % cb.total_cost
                     st.success(f"消耗金额: ${total_cost} (Tokens: {cb.total_tokens})")
 
