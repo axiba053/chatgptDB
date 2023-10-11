@@ -74,7 +74,7 @@ class UserInfos:
                 self.updata_config()
                 # Random password should be transferred to user securely
             else:
-                st.warning('请输入用户名及注册邮箱')
+                st.warning('请输入正确的用户名及注册邮箱！')
         except Exception as e:
             st.error(e)
 
