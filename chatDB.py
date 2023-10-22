@@ -8,6 +8,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Qdrant
 from langchain.chains import RetrievalQA
 from langchain import OpenAI
+from langchain.prompts import PromptTemplate
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams,Distance
 from qdrant_client.http.models import CollectionStatus
@@ -41,7 +42,7 @@ def create_collection(username):
 # create_collection('你好')
 
 def get_chain(API,username):
-    embeddings = OpenAIEmbeddings(openai_api_key=API)
+    embeddings = OpenAIEmbeddings(openai_api_key=API,embedding_ctx_length=10000)
     client = QdrantClient(
         url=os.getenv('QDRANT_HOST'),
         api_key=os.getenv('QDRANT_API_KEY'),
@@ -56,10 +57,21 @@ def get_chain(API,username):
         collection_name=username,
         embeddings=embeddings
     )
+    # 定制提示词
+    prompt_template = """请扮演B站(bilibili)的AI客服，你可以回答bilibili相关问题。结合下面背景信息来回答最后的问题。如果内容与问题无关,请用礼貌友好的语气回复。
+
+        {context}
+
+        Question: {question}
+        Answer:
+        """
+    PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
+    chain_type_kwargs = {"prompt": PROMPT}
     chain = RetrievalQA.from_chain_type(
-        llm=OpenAI(temperature=0,openai_api_key=API),
+        llm=OpenAI(temperature=0,openai_api_key=API,max_tokens=1000),
         chain_type="stuff",
         retriever=vector_store.as_retriever(search_kwargs={"k": 1}),
+        chain_type_kwargs=chain_type_kwargs,
         return_source_documents=True
     )
     return chain

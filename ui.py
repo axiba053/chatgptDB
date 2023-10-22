@@ -20,12 +20,12 @@ class Ui:
     def side_bar(self):
         # 标题 图标
         image = Image.open('./image/AIgirl.png')
-        st.set_page_config(page_title='AI客服', layout='wide', page_icon=image)
-        st.header('AI智能客服💁')
+        st.set_page_config(page_title='三强的小屋', layout='wide', page_icon=image)
+        st.header(':books: 知识库系统 ')
         #左边栏
         with st.sidebar:
             st.image(image, caption="", width=50)
-            st.markdown("## 客服使用说明")
+            st.markdown("## 知识库系统使用说明")
             st.markdown("0. 首先注册/登陆")
             st.markdown("1. 填入OpenAI API-key")
             st.markdown("2. 上传资料文件，创建/更新数据库")
