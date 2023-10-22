@@ -7,6 +7,10 @@ PyJWT==2.8.0
 python-dotenv==1.0.0
 PyYAML==6.0.1
 qdrant_client==1.5.4
-streamlit==1.25.0
+streamlit==1.26.0
 tiktoken==0.3.3
 unstructured==0.7.12
+anthropic==0.5.0
+trubrics==1.6.1
+streamlit-feedback==0.1.2
+duckduckgo-search
