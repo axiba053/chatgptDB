@@ -16,7 +16,9 @@ from qdrant_client import QdrantClient
 from dotenv import load_dotenv
 import streamlit as st
 
-load_dotenv(dotenv_path='../')
+curdir=os.path.dirname(__file__)
+path=curdir.split('pages')[0]
+load_dotenv(dotenv_path=path)
 
 image = Image.open('./image/AIgirl.png')
 st.set_page_config(page_title='三强的小屋', layout='wide', page_icon=image)

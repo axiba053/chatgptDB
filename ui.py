@@ -49,14 +49,14 @@ class Ui:
         # 图片展示
         image1 = Image.open("./image/shipinhao.jpg")
         image2 = Image.open("./image/dingyuehao.jpg")
-        image3 = Image.open("./image/wexin2.jpg")
+        image3 = Image.open("./image/shoukuan.jpg")
         col1, col2, col3 = st.columns(3)
         with col1:
             st.image(image1, caption="微信视频号", width=200)
         with col2:
             st.image(image2, caption="微信订阅号", width=200)
         with col3:
-            st.image(image3, caption="微信交流", width=200)
+            st.image(image3, caption="喝杯可乐", width=200)
 
 
     def main_interface(self,username):
