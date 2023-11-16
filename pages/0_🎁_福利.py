@@ -8,7 +8,7 @@ import streamlit as st
 from PIL import Image
 
 airport="✈️  [魔法上网机场推荐](https://github.com/axiba053/ChatGPT-airport-tizi-fanqiang)"
-website=":flag-cn:  [ChatGPT国内镜像网站推荐](https://github.com/axiba053/awesome-free-chatgpt/tree/main)"
+website=":desktop_computer: [ChatGPT国内镜像网站推荐](https://github.com/axiba053/awesome-free-chatgpt/tree/main)"
 txCloud=":partly_sunny: [云服务器推荐](https://curl.qcloud.com/AlTN7fIG)"
 
 
