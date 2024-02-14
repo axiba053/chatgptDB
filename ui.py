@@ -21,7 +21,8 @@ class Ui:
         # 标题 图标
         image = Image.open('./image/AIgirl.png')
         st.set_page_config(page_title='三强的小屋', layout='wide', page_icon=image)
-        st.header(':books: 知识库系统 ')
+        st.header(':books: 知识库系统 (停止维护,迁移到下面网址👇)')
+        st.markdown('[新访问地址](https://www.sqdxw.top/)')
         #左边栏
         with st.sidebar:
             st.image(image, caption="", width=50)
